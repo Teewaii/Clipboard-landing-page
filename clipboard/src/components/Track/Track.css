@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 20px 24px;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 300;
+  box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.Track-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.Track-wrapper .heading {
+  color: hsl(210deg, 10%, 33%);
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.Track-wrapper .body {
+  font-size: 19px;
+  color: hsl(201deg, 11%, 66%);
+  line-height: 1.5rem;
+  margin-bottom: 40px;
+}
+.Track-wrapper .comp-screen img {
+  height: 70%;
+  max-width: 90%;
+  margin-bottom: 15px;
+}
+.Track-wrapper .Track-spec .title {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 1024px) {
+  .Track-wrapper {
+    padding-top: 95px;
+  }
+  .Track-spec {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+  }
+  .Spec-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 550px;
+    padding: 95px;
+    transform: scale(0.8);
+  }
+  .Spec-list .body {
+    text-align: left;
+    width: 350px;
+  }
+  .des .body {
+    max-width: 650px;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=Track.css.map */

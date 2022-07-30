@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$Cyan: hsl(171, 66%, 44%);
+$LightBlue: hsl(233, 100%, 69%);
+$DarkGrayishBlue: hsl(210, 10%, 33%);
+$GrayishBlue: hsl(201, 11%, 66%);
+$headerWeight: 600;
+$bodyWeight: 300;
+$BodyFontSize: 19px;
+$HeaderFontSize: 2.5rem;
+$SmallHeaderFont: 2.1rem;
+
+.pad {
+
+    padding: 20px 25px;
+
+}
+
+.Supercharge-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100vw;
+    margin: auto;
+
+    .heading {
+        color: $DarkGrayishBlue;
+        font-size: $SmallHeaderFont;
+        font-weight: $headerWeight;
+        margin-bottom: 20px;
+    }
+
+    .body {
+        font-size: $BodyFontSize;
+        color: $GrayishBlue;
+        line-height: 1.5rem;
+        margin-bottom: 60px;
+    }
+
+    .workFlows {
+        margin-bottom: 60px;
+    }
+
+    .icon {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width:800px) {
+
+    .Supercharge-wrapper {
+        padding-top: 50px;
+        max-width: 100vw;
+
+        .workFlows {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(250px, 300px));
+            grid-template-rows: 250px;
+            column-gap: 10px;
+
+            .card {
+                padding: 20px 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .body {
+                font-size: $BodyFontSize;
+                color: $GrayishBlue;
+                line-height: 1.8rem;
+                width: 310px;
+                transform: scale(.8);
+            }
+
+            .heading {
+                font-size: xx-large;
+                transform: scale(.6);
+                margin-bottom: 5px;
+            }
+
+            .icon {
+
+                transform: scale(.8);
+            }
+        }
+    }
+
+    .Brands {
+        // display: grid;
+        // grid-template-columns: repeat(5, minmax(20px, 50px));
+        // padding: 1px 50px;
+        // column-gap: 160px;
+
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        margin: auto;
+
+    }
+
+    .logo img {
+        max-width: 110px;
+        // border: 1px solid rgb(0, 251, 255);
+    }
+}

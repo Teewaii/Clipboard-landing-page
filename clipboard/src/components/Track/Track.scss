@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$Cyan: hsl(171, 66%, 44%);
+$LightBlue: hsl(233, 100%, 69%);
+$DarkGrayishBlue: hsl(210, 10%, 33%);
+$GrayishBlue: hsl(201, 11%, 66%);
+$headerWeight: 600;
+$bodyWeight: 300;
+$BodyFontSize: 19px;
+$HeaderFontSize: 2.5rem;
+$SmallHeaderFont: 2.1rem;
+
+
+.btn {
+    padding: 20px 24px;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: $bodyWeight;
+    box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
+}
+
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+
+}
+
+.Track-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+
+    .heading {
+        color: $DarkGrayishBlue;
+        font-size: $SmallHeaderFont;
+        font-weight: $headerWeight;
+        margin-bottom: 20px;
+    }
+
+    .body {
+        font-size: $BodyFontSize;
+        color: $GrayishBlue;
+        line-height: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    .comp-screen img {
+        height: 70%;
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .Track-spec {
+        .title {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+
+
+
+@media (min-width:1024px) {
+
+    .Track-wrapper {
+        padding-top: 95px;
+    }
+
+    .Track-spec {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .comp-screen {
+        // background-color: black;
+
+    }
+
+    .Spec-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        width: 550px;
+        padding: 95px;
+        transform: scale(.8);
+
+        .body {
+            text-align: left;
+            width: 350px;
+        }
+    }
+
+    .des {
+        .body {
+            max-width: 650px;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$Cyan: hsl(171, 66%, 44%);
+$LightBlue: hsl(233, 100%, 69%);
+$DarkGrayishBlue: hsl(210, 10%, 33%);
+$GrayishBlue: hsl(201, 11%, 66%);
+$headerWeight: 600;
+$bodyWeight: 300;
+$BodyFontSize: 19px;
+$HeaderFontSize: 2.5rem;
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+
+}
+
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 95vh;
+
+    .logo {
+        height: 150px;
+        width: 300px;
+        // border: 2px solid red;
+        margin: 75px 0;
+    }
+
+    .heading {
+        color: $DarkGrayishBlue;
+        font-size: $HeaderFontSize;
+        font-weight: $headerWeight;
+        margin-bottom: 20px;
+    }
+
+    .body {
+        font-size: $BodyFontSize;
+        color: $GrayishBlue;
+        line-height: 1.5rem;
+        margin-bottom: 40px;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        width: 90%;
+
+        .green {
+            background-color: $Cyan;
+        }
+
+        .blue {
+            background-color: $LightBlue;
+        }
+    }
+
+}
+
+
+.btn {
+    padding: 24px 24px;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: $bodyWeight;
+    box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width:768px) {
+
+    .btn {
+        padding: 12px 20px;
+        border-radius: 50px;
+        width: 80%;
+        font-size: .9rem;
+
+    }
+
+    .btns {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .btn {
+        padding: 12px 5px;
+        border: none;
+        border-radius: 50px;
+        max-width: 14%;
+        font-size: .9rem;
+    }
+}
+
+.pad {
+
+    padding: 20px 25px;
+
+}
+
+@media (min-width:768px) {
+    .hero-wrapper {
+        background-image: url(../../images/bg-header-desktop.png);
+        // height: 80vh;
+        // border: 2px solid red;
+
+        .logo {
+            height: 110px;
+            width: 150px;
+            //  border: 2px solid red;
+            margin: 70px 0 50px 0;
+        }
+
+        // .heading{
+        //     color: $DarkGrayishBlue;
+        //     font-size: $HeaderFontSize;
+        //     font-weight: $headerWeight;
+        //     margin-bottom: 20px;
+        // }
+
+        .body {
+            width: 650px;
+            margin-bottom: 45px;
+        }
+
+        .btns {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 35px;
+            width: 700px;
+        }
+
+        .btn {
+            padding: 14px 5px;
+            border: none;
+            min-width: 10%;
+            max-width: 30%;
+            font-size: .9rem;
+        }
+    }
+}
