@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "95396a1dfc723d02f765",
-    "url": "/clipboard-landing-page/static/css/main.a732d6ef.chunk.css"
+    "revision": "c026f5f4f630b0442c55",
+    "url": "/clipboard-landing-page/static/css/main.1d7cc4ea.chunk.css"
   },
   {
-    "revision": "95396a1dfc723d02f765",
+    "revision": "c026f5f4f630b0442c55",
     "url": "/clipboard-landing-page/static/js/main.7e932193.chunk.js"
   },
   {
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/clipboard-landing-page/static/media/bg-header-desktop.df6601b0.png"
   },
   {
-    "revision": "cbb9c050951c7bdfa8bf33731abd7be9",
+    "revision": "0e994814b4475b69f58b8d8e475a0dd5",
     "url": "/clipboard-landing-page/index.html"
   }
 ];
