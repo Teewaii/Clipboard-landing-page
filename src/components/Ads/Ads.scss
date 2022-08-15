@@ -56,7 +56,7 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 35px;
-        width: 90%;
+        width: 80%;
 
         .green {
             background-color: $Cyan;
@@ -75,7 +75,7 @@ body {
     border: none;
     border-radius: 50px;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
     font-weight: $bodyWeight;
     box-shadow: -1px 15px 30px -4px rgba(0, 0, 0, 0.3);
